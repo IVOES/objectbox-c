@@ -1,0 +1,308 @@
+examples/c-cursor-no-gen/main.c:428:9: style: The if condition is the same as the previous if condition [duplicateCondition]
+    if (!rc) {
+        ^
+examples/c-cursor-no-gen/main.c:426:9: note: First condition
+    if (!rc) Task_end_as_root(&builder);
+        ^
+examples/c-cursor-no-gen/main.c:428:9: note: Second condition
+    if (!rc) {
+        ^
+examples/c-cursor-no-gen/flatbuffers_common_builder.h:668:1: style: The scope of the variable 'i' can be reduced. [variableScope]
+__flatbuffers_build_scalar(flatbuffers_, flatbuffers_char, char)
+^
+examples/c-cursor-no-gen/flatbuffers_common_builder.h:669:1: style: The scope of the variable 'i' can be reduced. [variableScope]
+__flatbuffers_build_scalar(flatbuffers_, flatbuffers_uint8, uint8_t)
+^
+examples/c-cursor-no-gen/flatbuffers_common_builder.h:670:1: style: The scope of the variable 'i' can be reduced. [variableScope]
+__flatbuffers_build_scalar(flatbuffers_, flatbuffers_int8, int8_t)
+^
+examples/c-cursor-no-gen/flatbuffers_common_builder.h:671:1: style: The scope of the variable 'i' can be reduced. [variableScope]
+__flatbuffers_build_scalar(flatbuffers_, flatbuffers_bool, flatbuffers_bool_t)
+^
+examples/c-cursor-no-gen/flatbuffers_common_builder.h:672:1: style: The scope of the variable 'i' can be reduced. [variableScope]
+__flatbuffers_build_scalar(flatbuffers_, flatbuffers_uint16, uint16_t)
+^
+examples/c-cursor-no-gen/flatbuffers_common_builder.h:673:1: style: The scope of the variable 'i' can be reduced. [variableScope]
+__flatbuffers_build_scalar(flatbuffers_, flatbuffers_uint32, uint32_t)
+^
+examples/c-cursor-no-gen/flatbuffers_common_builder.h:674:1: style: The scope of the variable 'i' can be reduced. [variableScope]
+__flatbuffers_build_scalar(flatbuffers_, flatbuffers_uint64, uint64_t)
+^
+examples/c-cursor-no-gen/flatbuffers_common_builder.h:675:1: style: The scope of the variable 'i' can be reduced. [variableScope]
+__flatbuffers_build_scalar(flatbuffers_, flatbuffers_int16, int16_t)
+^
+examples/c-cursor-no-gen/flatbuffers_common_builder.h:676:1: style: The scope of the variable 'i' can be reduced. [variableScope]
+__flatbuffers_build_scalar(flatbuffers_, flatbuffers_int32, int32_t)
+^
+examples/c-cursor-no-gen/flatbuffers_common_builder.h:677:1: style: The scope of the variable 'i' can be reduced. [variableScope]
+__flatbuffers_build_scalar(flatbuffers_, flatbuffers_int64, int64_t)
+^
+examples/c-cursor-no-gen/flatbuffers_common_builder.h:678:1: style: The scope of the variable 'i' can be reduced. [variableScope]
+__flatbuffers_build_scalar(flatbuffers_, flatbuffers_float, float)
+^
+examples/c-cursor-no-gen/flatbuffers_common_builder.h:679:1: style: The scope of the variable 'i' can be reduced. [variableScope]
+__flatbuffers_build_scalar(flatbuffers_, flatbuffers_double, double)
+^
+examples/c-cursor-no-gen/flatbuffers_common_builder.h:681:1: style: Unused variable: _ret [unusedVariable]
+__flatbuffers_build_string(flatbuffers_)
+^
+examples/c-cursor-no-gen/task_builder.h:23:1: style: Unused variable: _ret [unusedVariable]
+__flatbuffers_build_table(flatbuffers_, Task, 4)
+^
+examples/c-gen/tasklist.obx.h:75:27: style: The scope of the variable '_p' can be reduced. [variableScope]
+    flatcc_builder_ref_t* _p;
+                          ^
+examples/cpp-gen-sync/tasklist-example-app.hpp:63:5: style: Class 'TasklistCmdlineApp' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+    TasklistCmdlineApp(obx::Store& obxStore)
+    ^
+examples/cpp-gen-sync/tasklist-example-app.hpp:189:56: style: Parameter 'list' can be declared with const [constParameter]
+    void listTasks(std::vector<std::unique_ptr<Task>> &list) {
+                                                       ^
+examples/cpp-gen/tasklist-example-app.hpp:145:10: performance:inconclusive: Technically the member function 'TasklistCmdlineApp::splitInput' can be static (but you may consider moving to unnamed namespace). [functionStatic]
+    void splitInput(const std::string& input, std::string& outCmd, std::string& outArg) {
+         ^
+examples/cpp-gen/tasklist-example-app.hpp:158:13: performance:inconclusive: Technically the member function 'TasklistCmdlineApp::getCommand' can be static (but you may consider moving to unnamed namespace). [functionStatic]
+    Command getCommand(const std::string& cmd) {
+            ^
+examples/cpp-gen/tasklist-example-app.hpp:167:10: performance:inconclusive: Technically the member function 'TasklistCmdlineApp::printHelp' can be static (but you may consider moving to unnamed namespace). [functionStatic]
+    void printHelp() {
+         ^
+examples/cpp-gen/tasklist-example-app.hpp:182:17: performance:inconclusive: Technically the member function 'TasklistCmdlineApp::fmtTime' can be static (but you may consider moving to unnamed namespace). [functionStatic]
+    std::string fmtTime(uint64_t timestamp) {
+                ^
+examples/cpp-gen/tasklist-example-app.hpp:62:5: style: Class 'TasklistCmdlineApp' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+    TasklistCmdlineApp(obx::Store& obxStore)
+    ^
+external/flatcc-src/builder.c:429:14: style: The scope of the variable 'buf' can be reduced. [variableScope]
+    iovec_t *buf;
+             ^
+external/flatcc-src/builder.c:485:14: style: The scope of the variable 'buf' can be reduced. [variableScope]
+    iovec_t *buf;
+             ^
+external/flatcc-src/builder.c:703:12: style: The scope of the variable 'end_pad' can be reduced. [variableScope]
+    size_t end_pad;
+           ^
+external/flatcc-src/builder.c:1109:12: style: The scope of the variable 'i' can be reduced. [variableScope]
+    size_t i;
+           ^
+external/flatcc-src/builder.c:1248:72: style: The scope of the variable 'offset_field' can be reduced. [variableScope]
+    uoffset_t pad, vt_offset, vt_offset_field, vt_base, base, offset, *offset_field;
+                                                                       ^
+external/flatcc-src/builder.c:1531:27: style: The scope of the variable 'pref' can be reduced. [variableScope]
+    flatcc_builder_ref_t *pref;
+                          ^
+external/flatcc-src/builder.c:1550:27: style: The scope of the variable 'pref' can be reduced. [variableScope]
+    flatcc_builder_ref_t *pref;
+                          ^
+external/flatcc-src/emitter.c:91:12: style: The scope of the variable 'k' can be reduced. [variableScope]
+    size_t k;
+           ^
+external/flatcc-src/emitter.c:116:12: style: The scope of the variable 'k' can be reduced. [variableScope]
+    size_t k;
+           ^
+external/flatcc-src/emitter.c:154:30: style: Variable 'p' is assigned a value that is never used. [unreadVariable]
+    flatcc_emitter_page_t *p = E->front;
+                             ^
+external/flatcc-src/refmap.c:54:0: information: Skipping configuration 'FLATCC_HASH_SEED' since the value of 'FLATCC_HASH_SEED' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    x = (uint64_t)((size_t)src) ^ _flatcc_refmap_seed;
+^
+src-test-gen/c_test.obx.h:179:27: style: The scope of the variable '_p' can be reduced. [variableScope]
+    flatcc_builder_ref_t* _p;
+                          ^
+src-test-gen/c_test.obx.h:210:34: style: The scope of the variable 'val' can be reduced. [variableScope]
+    const flatbuffers_uoffset_t* val;
+                                 ^
+src-test-gen/c_test.obx.h:211:12: style: The scope of the variable 'len' can be reduced. [variableScope]
+    size_t len;
+           ^
+src-test-gen/c_test.obx.h:297:27: style: The scope of the variable '_p' can be reduced. [variableScope]
+    flatcc_builder_ref_t* _p;
+                          ^
+src-test-gen/c_test.obx.h:325:34: style: The scope of the variable 'val' can be reduced. [variableScope]
+    const flatbuffers_uoffset_t* val;
+                                 ^
+src-test-gen/c_test.obx.h:326:12: style: The scope of the variable 'len' can be reduced. [variableScope]
+    size_t len;
+           ^
+src-test/flatbuffers_common_builder.h:654:1: style: Unused variable: _ret [unusedVariable]
+__flatbuffers_build_string(flatbuffers_)
+^
+src-test/c_test_builder.h:23:1: style: Unused variable: _ret [unusedVariable]
+__flatbuffers_build_table(flatbuffers_, Foo, 2)
+^
+src-test/c_test_builder.h:28:1: style: Unused variable: _ret [unusedVariable]
+__flatbuffers_build_table(flatbuffers_, Bar, 3)
+^
+src-test/c_test_objects.c:10:35: style: Variable 'root' is assigned a value that is never used. [unreadVariable]
+    flatbuffers_buffer_ref_t root = Foo_end_as_root(B);
+                                  ^
+src-test/c_test_objects.c:62:35: style: Variable 'root' is assigned a value that is never used. [unreadVariable]
+    flatbuffers_buffer_ref_t root = Bar_end_as_root(B);
+                                  ^
+examples/cpp-gen-sync/tasklist.obx.hpp:15:1: error: The one definition rule is violated, different classes/structs have the same name 'Task' [ctuOneDefinitionRuleViolation]
+struct Task {
+^
+examples/cpp-gen/tasklist.obx.hpp:15:1: note: The one definition rule is violated, different classes/structs have the same name 'Task'
+struct Task {
+^
+examples/cpp-gen-sync/tasklist.obx.hpp:15:1: note: The one definition rule is violated, different classes/structs have the same name 'Task'
+struct Task {
+^
+examples/cpp-gen-sync/tasklist-example-app.hpp:55:1: error: The one definition rule is violated, different classes/structs have the same name 'TasklistCmdlineApp' [ctuOneDefinitionRuleViolation]
+class TasklistCmdlineApp : public obx::SyncChangeListener {
+^
+examples/cpp-gen/tasklist-example-app.hpp:54:1: note: The one definition rule is violated, different classes/structs have the same name 'TasklistCmdlineApp'
+class TasklistCmdlineApp {
+^
+examples/cpp-gen-sync/tasklist-example-app.hpp:55:1: note: The one definition rule is violated, different classes/structs have the same name 'TasklistCmdlineApp'
+class TasklistCmdlineApp : public obx::SyncChangeListener {
+^
+examples/cpp-gen-sync/tasklist.obx.hpp:21:5: error: The one definition rule is violated, different classes/structs have the same name 'Task::_OBX_MetaInfo' [ctuOneDefinitionRuleViolation]
+    struct _OBX_MetaInfo {
+    ^
+examples/cpp-gen/tasklist.obx.hpp:21:5: note: The one definition rule is violated, different classes/structs have the same name 'Task::_OBX_MetaInfo'
+    struct _OBX_MetaInfo {
+    ^
+examples/cpp-gen-sync/tasklist.obx.hpp:21:5: note: The one definition rule is violated, different classes/structs have the same name 'Task::_OBX_MetaInfo'
+    struct _OBX_MetaInfo {
+    ^
+external/flatcc-src/builder.c:2012:0: style: The function 'flatcc_builder_aligned_alloc' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:2022:0: style: The function 'flatcc_builder_alloc' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1711:0: style: The function 'flatcc_builder_append_union_vector' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1284:0: style: The function 'flatcc_builder_check_required_field' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1291:0: style: The function 'flatcc_builder_check_union_field' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1566:0: style: The function 'flatcc_builder_create_union_vector' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:724:0: style: The function 'flatcc_builder_embed_buffer' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1505:0: style: The function 'flatcc_builder_end_offset_vector_for_unions' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:882:0: style: The function 'flatcc_builder_end_struct' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1631:0: style: The function 'flatcc_builder_end_union_vector' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:535:0: style: The function 'flatcc_builder_enter_user_frame' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:519:0: style: The function 'flatcc_builder_enter_user_frame_ptr' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:563:0: style: The function 'flatcc_builder_exit_user_frame_at' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1677:0: style: The function 'flatcc_builder_extend_union_vector' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1952:0: style: The function 'flatcc_builder_finalize_buffer' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:2027:0: style: The function 'flatcc_builder_free' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1901:0: style: The function 'flatcc_builder_get_buffer_end' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1896:0: style: The function 'flatcc_builder_get_buffer_start' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:571:0: style: The function 'flatcc_builder_get_current_user_frame' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:2032:0: style: The function 'flatcc_builder_get_emit_context' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1878:0: style: The function 'flatcc_builder_get_level' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1916:0: style: The function 'flatcc_builder_get_type' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1921:0: style: The function 'flatcc_builder_get_type_at' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:576:0: style: The function 'flatcc_builder_get_user_frame_ptr' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1857:0: style: The function 'flatcc_builder_pop_buffer_alignment' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1849:0: style: The function 'flatcc_builder_push_buffer_alignment' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1077:0: style: The function 'flatcc_builder_reserve_table' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1873:0: style: The function 'flatcc_builder_set_block_align' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1911:0: style: The function 'flatcc_builder_set_identifier' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1883:0: style: The function 'flatcc_builder_set_max_level' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1906:0: style: The function 'flatcc_builder_set_vtable_cache_limit' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1867:0: style: The function 'flatcc_builder_set_vtable_clustering' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:866:0: style: The function 'flatcc_builder_start_struct' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1619:0: style: The function 'flatcc_builder_start_union_vector' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:877:0: style: The function 'flatcc_builder_struct_edit' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1528:0: style: The function 'flatcc_builder_table_add_union' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1547:0: style: The function 'flatcc_builder_table_add_union_vector' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1814:0: style: The function 'flatcc_builder_table_edit' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1685:0: style: The function 'flatcc_builder_truncate_union_vector' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:1694:0: style: The function 'flatcc_builder_union_vector_push' is never used. [unusedFunction]
+
+^
+external/flatcc-src/builder.c:919:0: style: The function 'flatcc_builder_vector_push' is never used. [unusedFunction]
+
+^
+external/flatcc-src/emitter.c:138:0: style: The function 'flatcc_emitter_recycle_page' is never used. [unusedFunction]
+
+^
+src-test/c_test_objects.c:66:0: style: The function 'get_bar' is never used. [unusedFunction]
+
+^
+examples/cpp-gen-sync/tasklist.obx.cpp:29:0: style: The function 'newFromFlatBuffer' is never used. [unusedFunction]
+
+^
+src-test/c_test_objects.c:80:0: style: The function 'put_bar' is never used. [unusedFunction]
+
+^
+examples/cpp-gen-sync/tasklist.obx.cpp:10:0: style: The function 'toFlatBuffer' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
